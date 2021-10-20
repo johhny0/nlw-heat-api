@@ -3,7 +3,7 @@ import { AuthenticateUserController } from "./controllers/AuthenticateUserContro
 import { CreateMessageController } from "./controllers/CreateMessageController";
 import { GetLast3MessagesController } from "./controllers/GetLast3MessagesController";
 import { ProfileUserController } from "./controllers/ProfileUserController";
-import { ensureAuthenticated } from "./middleware/ensureAuthenticaated";
+import { ensureAuthenticated } from "./middleware/ensureAuthenticated";
 
 
 const routes = Router();
