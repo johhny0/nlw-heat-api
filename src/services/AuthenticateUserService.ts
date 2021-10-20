@@ -43,7 +43,6 @@ class AuthenticateUserService {
         })
 
         if (!user) {
-            console.log("user not found")
             await prismaClient.user.create({
                 data: {
                     github_id: id,
@@ -53,7 +52,6 @@ class AuthenticateUserService {
                 }
             })
         }
-        console.log("user")
 
         const token = sign(
             { user: { name: user.name, avatar_url: user.avatar_url, id: user.id } },
